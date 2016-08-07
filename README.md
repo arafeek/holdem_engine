@@ -1,7 +1,7 @@
 # Adam's Poker Engine
 
 ### Todos
-* Implement basic interactive 1v1 "flips"
+* ~~Implement basic interactive 1v1 "flips"~~
 * (WIP) Implement hand scoring
 * Implement 1v1 interactive play with all actions
 * Implement multiplayer (up to 10) play
