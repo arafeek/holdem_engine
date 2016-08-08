@@ -1,6 +1,5 @@
 from deck import Deck
-from hand_names import Hands
-import helpers
+from holdem import helpers, Hands
 
 sep = "=============\n\n"
 
