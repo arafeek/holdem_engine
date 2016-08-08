@@ -1,5 +1,6 @@
 from deck import Deck
-
+from hand_names import Hands
+import helpers
 
 sep = "=============\n\n"
 
@@ -50,13 +51,21 @@ def river():
     print sep
 
 def showdown():
-    print "Player 1 has: "
+    p1_score = helpers.scoreHand(P1, board)
+    p2_score = helpers.scoreHand(P2, board)
+    print "Player 1 has: %s" %Hands[p1_score]
     print P1
     print sep
 
-    print "Player 2 has: "
+    print "Player 2 has: %s" %Hands[p2_score]
     print P2
     print sep
+    if p1_score > p2_score:
+        print "Player 1 wins."
+    elif p2_score > p1_score:
+        print "Player 2 wins."
+    else:
+        print "It's a chop!"
 
 def run_game():
     start_game()
